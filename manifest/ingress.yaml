@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gitea
+  namespace: env
+  annotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+  - hosts:
+    - gitea.local
+    secretName: ingress-secrets
+  rules:
+  - host: gitea.local
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: gitea
+          servicePort: 80
