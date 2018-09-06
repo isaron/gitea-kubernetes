@@ -4,7 +4,7 @@
 
 1. helm
 
-Mostly cloned from [[WIP] Adds Gitea to the incubator #3408](https://github.com/helm/charts/pull/3408), and upgrade Gitea version to 1.5, modified PVC using nfs-client, using `initContainers` to initial rights settings.
+Mostly cloned from [[WIP] Adds Gitea to the incubator #3408](https://github.com/helm/charts/pull/3408), and [cdrage's original source](https://github.com/cdrage/charts/tree/add-gitea/incubator/gitea), and upgrade Gitea version to 1.5, modified PVC using nfs-client, using `initContainers` to initial rights settings.
 
 2. manifest
 
