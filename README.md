@@ -6,13 +6,13 @@
 
 Mostly cloned from [[WIP] Adds Gitea to the incubator #3408](https://github.com/helm/charts/pull/3408), and [cdrage's original source](https://github.com/cdrage/charts/tree/add-gitea/incubator/gitea).
 
-And from this, i upgrade Gitea version to 1.5, modified PVC using nfs-client, using `initContainers` to initial rights settings.
+And from this, i upgrade Gitea version to 1.5, modifiy PVC using nfs-client, using `initContainers` to initial rights settings.
 
 2. manifest
 
 Cloned from [jmferrer/gitea-kubernetes](https://github.com/jmferrer/gitea-kubernetes) and [norbertvannobelen/gitea-kubernetes](https://github.com/norbertvannobelen/gitea-kubernetes).
 
-And from this, i upgrade Gitea version to 1.5 and modified PVC using nfs-client.
+And from this, i upgrade Gitea version to 1.5 and modifiy PVC using nfs-client.
 
 ## Two ways to setup Gitea on Kubernetes cluster
 
