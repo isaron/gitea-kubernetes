@@ -32,6 +32,7 @@ git clone https://github.com/isaron/gitea-kubernetes.git && cd gitea-kubernetes/
 
 - Check `values.yaml` if you want modify yours config, and save as `myvalue.yaml`, then install using Helm:
 ```
+helm dep up .
 helm install --name gitea --namespace env . -f myvalue.yaml
 ```
 
