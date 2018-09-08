@@ -18,4 +18,7 @@ spec:
       - path: /
         backend:
           serviceName: gitea
-          servicePort: 80
+          servicePort: 443
+      - backend:
+          serviceName: gitea-ssh
+          servicePort: 22

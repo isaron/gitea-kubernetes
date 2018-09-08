@@ -8,9 +8,11 @@ metadata:
 spec:
   ports:
     - name: gitea
-      protocol: TCP
-      port: 80
+      port: 443
       targetPort: 3000
+    - name: gitea-ssh
+      port: 22
+      targetPort: 22
   selector:
     name: gitea
   type: ClusterIP

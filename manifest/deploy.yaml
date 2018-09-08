@@ -34,7 +34,7 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
-          protocol: TCP
+        - containerPort: 22
         volumeMounts:
         - name: gitea
           mountPath: "/data"
